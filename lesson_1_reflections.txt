@@ -1,0 +1,51 @@
+How did viewing a diff between two versions of a file help you see the bug
+that was introduced?
+
+The ability to see the differences between files lined up allowed me to skip
+the lines that were the same and to only focus on the lines which were 
+different.  Of the lines which were different, I was then able to zero in on 
+particular items of interest and quickly identify the bug that was introduced.
+
+How could having easy access to the entire history of a file make you a more 
+efficient programmer in the long term?
+
+Having the entire history of a file would allow me to see what's already been
+tried and remind me of why I'd gone in a different direction with the work.
+
+What do you think are the pros and cons of manually choosing when to create a 
+commit, like you do in Git, vs having versions automatically saved, like 
+Google Docs does?
+
+pros of manually commiting in git include ability to decide what are logical 
+break points to make the commit.
+cons of manually committing could result in users who save too often or not
+often enough for their files to make useful sense.
+
+Why do you think some version control systems, like Git, allow saving multiple 
+files in one commit, while others, like Google Docs, treat each file 
+separately?
+
+Some version control systems such as Git allow saving multiple files in one
+commit becaues it is likely that the files are highly inter-dependent on 
+one another.  Other systems such as google docs have files that are not
+related and therefore it makes more sense to treat each file separately.
+
+How can you use the commands git log and git diff to view the history of files?
+
+The git log command is useful to see the full scope of changes across the 
+lifetime of the file while the git diff command is useful for seeing changes
+across specific versions of files.
+
+How might using version control make you more confident to make changes that 
+could break something?
+
+Use of version control would make me more confident to make changes that could
+break something because if I had committed changes at a known good state, I
+could go ahead and make changes knowing that at most I would only have to 
+re-do the items after the latest commit; and not have to start as aa page 1 
+re-write.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I'd like to use Git in conjunction with GitHub to manage updates to mobile
+android application lesson / tutorials that I'm working through.
