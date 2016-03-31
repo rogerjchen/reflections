@@ -8,16 +8,44 @@ directory is to be version controlled.
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
+The staging area is different from the working directory in that this area is
+for items that are logically completed for the time being, and ready to be
+committed.  The repository contains all the files that have been committed, the 
+files that are in the staging area, and the files in the working directory.
+
 How can you use the staging area to make sure you have one commit per logical
 change?
+
+The staging area can be used by only adding the files part of the logical change
+to be committed.  If additional logical changes are included, those can be added
+to the staging area at a later time, with its own commit.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Branches would be helpful when there are many different concepts you'd like to
+try out but don't necessarily want them in the production code.  Branches
+would allow you to make a "copy" of the master branch and experiment with
+concepts in the various branches.  If any of them worked out, that branch
+could be pushed forward, if not, you could return to the master branch.
+
 How do the diagrams help you visualize the branch structure?
+
+The diagrams help with the visualization of the branch structure since it can
+be difficult at times to understand with just text.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+The result of merging two branches together is that these two branches now have
+a shared child node.  We represent it in the diagram in the way that we do
+because this is the way in which best represents a node with two parents.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+pro of automatic merging is that for straightforward merge cases, Git will just
+take care of the merge for us without us needing to expend any additional effort
+to resolve a merge.  Always having to do it manually would mean lots of extra
+effort.  However, a manual merge may be necessary when it isn't always clear
+how two branches should be merged.
