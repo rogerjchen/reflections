@@ -3,3 +3,44 @@ local?
 
 A remote repository is useful when multiple people are contributing to the same
 repository or if you're working on a repository from different computers.
+
+Why might you want to always pull changes manually rather than having Git 
+automatically stay up-to-date with your remote repository?
+
+Pulling changes manually will allow control over what information is on you
+local machine.  An automatic pull may include items for which is not ready
+for use.
+
+What is the benefit of having a copy of the last known state of the remote 
+stored locally?
+
+Having a copy of the last known state of the remote stored locally means
+that you'd be able to see the last known state of the remote.
+
+How would you collaborate without using Git or GitHub? What would be easier, 
+and what would be harder?
+
+Without using Git or GitHub collaboration would have to occur over email
+or with physical drive passed back and forth.  It would be easeier in that
+changes would have to occur in serial, and there would not need to be any
+merge activity or merge conflicts.  However, using Git / GitHub allows many
+users to work on the same file at the same time by creating their own forks
+and allows contributors to work out a best solution and move forward with
+the most optimal solution.
+
+When would you want to make changes in a separate branch rather than directly 
+in master? What benefits does each approach have?
+
+Making changes in a separate branch rather than directly in master is desirable
+when you want to make experimental changes to your files, but don't want to
+risk breaking the presumably good code residing on the master branch.  There 
+is some overhead associated with doing this in that a local branch would be
+created, the desired experimental changes made, then the local master is
+merged into the local branch.  The local branch is then pushed onto the remote
+branch.  The remote branch is then merged into the remote master.  Then the 
+remote master is pulled into the local master; after which both local master
+and remote master are in sync.  The benefit is that multiple people can work on
+the same files at the same time.  The benefit of changes in a separate branch
+is redueced risk to breaking master.  The benefit of directly making changes in 
+master is that there is less administrative overhead, but the potential to
+break master exists.
